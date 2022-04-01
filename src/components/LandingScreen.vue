@@ -33,6 +33,7 @@ export default {
   align-content: center;
   justify-content: center;
   position: static;
+  animation: entrance1 1s ease 0s 1 normal forwards;
 }
 .hero {
   position: relative;
