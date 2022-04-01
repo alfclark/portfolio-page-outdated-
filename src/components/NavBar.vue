@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <span class="navbar-brand" href="#">AC</span>
+      <a class="navbar-brand" href="#">AC</a>
       <button
         class="navbar-toggler"
         type="button"
