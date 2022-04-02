@@ -31,7 +31,7 @@ export default {
 
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: #141c3a;
+  background-color: var(--dark);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -44,6 +44,7 @@ export default {
 }
 :root {
   --purple: #783ad6;
+  --dark: #141c3a;
 }
 /* ANIMATIONS */
 @keyframes bounce1 {
@@ -104,6 +105,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: white;
   text-align: center;
-  background: 50% / contain url(@/assets/universe.png) #141c3a;
+  background: 50% / contain url(@/assets/universe.png) var(--dark);
 }
 </style>
