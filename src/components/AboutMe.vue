@@ -22,24 +22,36 @@
         </div>
       </div>
       <div class="social">
-        <a class="social-icon" href="https://github.com/alfclark"
+        <a
+          class="social-icon"
+          href="https://github.com/alfclark"
+          target="_blank"
           ><i class="fa-brands fa-github"></i
         ></a>
-        <a class="social-icon" href="https://www.linkedin.com/in/alfredoclark/"
+        <a
+          class="social-icon"
+          href="https://www.linkedin.com/in/alfredoclark/"
+          target="_blank"
           ><i class="fa-brands fa-linkedin-in"></i
         ></a>
         <a class="social-icon" href=""><i class="fa-solid fa-file"></i></a>
-        <a class="social-icon" href="https://codepen.io/alfclark"
+        <a
+          class="social-icon"
+          href="https://codepen.io/alfclark"
+          target="_blank"
           ><i class="fa-brands fa-codepen"></i
         ></a>
-        <a class="social-icon" href="mailto:alfredoclarkcardenas@gmail.com"
+        <a
+          class="social-icon"
+          href="mailto:alfredoclarkcardenas@gmail.com"
+          target="_blank"
           ><i class="fa-solid fa-envelope"></i
         ></a>
       </div>
       <div class="funfact">
-        <h3>Fun-Fact Generator About Me:</h3>
-        <span class="fact"></span>
-        <button>Tell me</button>
+        <h2>Want to know more about me?</h2>
+        <button class="factButton" @click="generateFact">Tell me</button>
+        <p class="fact">{{ fact }}</p>
       </div>
     </div>
   </section>
@@ -47,7 +59,30 @@
 
 <script>
 export default {
-  name: "AboutMe",
+  name: "App",
+  methods: {
+    generateFact() {
+      const numSelect = Math.floor(Math.random() * this.facts.length);
+      this.fact = this.facts[numSelect];
+    },
+  },
+  data() {
+    return {
+      fact: " ",
+      facts: [
+        "🐉 I lived 2 years in China 🐉",
+        "🎹 I play 6 instruments 🎹",
+        "👽 I am a big Star Wars fan 👽",
+        "🚗 I used to work for a Car Maker 🚗",
+        "💼 I used to have a small trade company 💼",
+        "⚽ I have played soccer for more than 15 years ⚽",
+        "🐾 I have 2 dogs 🐾",
+        "🥡 My chinese name is 马超 🥡",
+        "🏃🏻‍♂️ I have a national silver medal in track & field 🏃🏻‍♂️",
+        "🤖 I am a Mechatronics Engineer 🤖",
+      ],
+    };
+  },
 };
 </script>
 
@@ -65,11 +100,14 @@ export default {
   border-radius: 11px;
   width: 90vw;
   margin: 0 auto;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sub-about {
   font-size: 3rem;
   margin-bottom: 1rem;
-  padding-top: 2rem;
 }
 .about-text {
   font-size: 1.5rem;
@@ -89,44 +127,34 @@ export default {
 
 .social-icon:hover {
   color: #141c3a;
+  transition: 0.4s;
 }
-
-/* Skills */
-.skills {
-  max-width: 100%;
-  margin-top: 10rem;
-  text-align: center;
+.funfact {
+  background-color: rgba(255, 255, 255, 0.813);
+  color: var(--purple);
+  width: 70%;
+  border-radius: 1rem;
+  padding: 1rem;
 }
-
-.skill-header {
-  margin-bottom: 1rem;
+.funfact h2 {
+  text-decoration: underline;
+  font-weight: 600;
 }
-
-.skills-wrapper img {
-  padding: 1.25rem;
+.factButton {
+  border: none;
+  background-color: var(--purple);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  margin: 0.5rem;
 }
-
-.icon {
-  width: 15.875rem;
-  height: 15.25rem;
+.factButton:hover {
+  background-color: var(--dark);
+  color: white;
+  transition: 0.4s;
 }
-
-.icon:hover {
-  animation: shake1 2s ease 0s 1 normal forwards;
-}
-
-.icon-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 10px 10px #783ad6;
-  padding: 20px;
-  margin: 10px;
-}
-
-.icon-card:hover {
-  box-shadow: 0 0;
-  border-color: #783ad6;
-  border-style: solid;
-  border-width: 5px;
+.fact {
+  font-size: 1.5rem;
+  color: var(--dark);
 }
 </style>
