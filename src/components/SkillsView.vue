@@ -67,7 +67,7 @@ export default {};
 <style scoped>
 .skills {
   max-width: 100%;
-  margin-top: 10rem;
+  margin-top: 4rem;
   text-align: center;
 }
 
@@ -80,8 +80,8 @@ export default {};
 }
 
 .icon {
-  width: 15.875rem;
-  height: 15.25rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .icon:hover {
@@ -92,8 +92,7 @@ export default {};
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 10px 10px #783ad6;
-  padding: 20px;
-  margin: 10px;
+  margin: 1rem;
 }
 
 .icon-card:hover {
