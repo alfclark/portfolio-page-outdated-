@@ -3,7 +3,7 @@
   <LandingScreen />
   <AboutMe />
   <SkillsView />
-
+  <GoTop />
   <FooterView />
 </template>
 
@@ -13,6 +13,7 @@ import LandingScreen from "./components/LandingScreen.vue";
 import AboutMe from "./components/AboutMe.vue";
 import SkillsView from "./components/SkillsView.vue";
 import FooterView from "./components/FooterView.vue";
+import GoTop from "./components/GoTop.vue";
 
 export default {
   name: "App",
@@ -22,6 +23,7 @@ export default {
     AboutMe,
     FooterView,
     SkillsView,
+    GoTop,
   },
 };
 </script>
@@ -102,6 +104,14 @@ export default {
   100% {
     animation-timing-function: ease-out;
     transform: translateY(0);
+  }
+}
+@keyframes show1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 #app {
