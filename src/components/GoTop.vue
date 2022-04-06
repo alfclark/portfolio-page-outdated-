@@ -20,14 +20,25 @@ export default {
 <style scoped>
 .fa-arrow-up {
   position: fixed;
-  right: 5%;
-  bottom: 5%;
+  right: 3%;
+  bottom: 3%;
   cursor: pointer;
   animation: bounce1 5s infinite;
   color: #fff;
   font-size: 2rem;
   z-index: 3;
+  background-color: var(--purple);
+  padding: 0.3rem 0.5rem;
+  border-radius: 50%;
+}
+.fa-arrow-up:hover {
+  background-color: var(--dark);
 }
 @media screen and (max-width: 900px) {
+  .fa-arrow-up {
+    font-size: 1.5rem;
+    right: 7%;
+    bottom: 3%;
+  }
 }
 </style>
