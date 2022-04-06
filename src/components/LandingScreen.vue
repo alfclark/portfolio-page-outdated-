@@ -8,11 +8,11 @@
         <h3 class="me">
           I am a self-taught web developer. I love coding amazing websites.
         </h3>
-        <h3 class="tacos">...and Tacos.</h3>
+        <h3 v-show="showTacos" class="tacos">...and Tacos.</h3>
       </div>
     </section>
     <div class="scroll-me">
-      <p class="scroll-text">Don't be shy, scroll through me :)</p>
+      <p class="scroll-text">Don't be shy, scroll :)</p>
       <i class="fa-solid fa-arrow-down"></i>
     </div>
   </div>
@@ -20,7 +20,14 @@
 
 <script>
 export default {
-  name: "LandingScreen",
+  data() {
+    return {
+      showTacos: false,
+    };
+  },
+  mounted() {
+    setTimeout(() => (this.showTacos = true), 2000);
+  },
 };
 </script>
 
@@ -68,5 +75,10 @@ export default {
 }
 .fa-arrow-down {
   margin-top: -1rem;
+}
+.tacos {
+  font-size: 1.7rem;
+  animation: show1 5s forwards;
+  text-decoration: underline;
 }
 </style>
