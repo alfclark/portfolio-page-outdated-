@@ -2,6 +2,8 @@
   <NavBar />
   <LandingScreen />
   <AboutMe />
+  <SkillsView />
+
   <FooterView />
 </template>
 
@@ -9,7 +11,7 @@
 import NavBar from "./components/NavBar.vue";
 import LandingScreen from "./components/LandingScreen.vue";
 import AboutMe from "./components/AboutMe.vue";
-
+import SkillsView from "./components/SkillsView.vue";
 import FooterView from "./components/FooterView.vue";
 
 export default {
@@ -19,6 +21,7 @@ export default {
     LandingScreen,
     AboutMe,
     FooterView,
+    SkillsView,
   },
 };
 </script>
