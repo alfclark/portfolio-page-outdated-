@@ -4,6 +4,7 @@
   <AboutMe />
   <SkillsView />
   <GoTop />
+  <ContactSection />
   <FooterView />
 </template>
 
@@ -14,6 +15,7 @@ import AboutMe from "./components/AboutMe.vue";
 import SkillsView from "./components/SkillsView.vue";
 import FooterView from "./components/FooterView.vue";
 import GoTop from "./components/GoTop.vue";
+import ContactSection from "./components/ContactSection.vue";
 
 export default {
   name: "App",
@@ -24,6 +26,7 @@ export default {
     FooterView,
     SkillsView,
     GoTop,
+    ContactSection,
   },
 };
 </script>
