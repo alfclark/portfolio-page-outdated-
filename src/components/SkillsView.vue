@@ -1,6 +1,7 @@
 <template>
   <!-- Skills Section -->
-  <section id="skills" class="container">
+  <div style="margin-top: -50px; position: absolute" id="skills"></div>
+  <section class="container">
     <div class="skills">
       <h1 class="subtitle">
         My Top Skills
@@ -60,8 +61,14 @@ export default {};
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.container {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .skills {
-  max-width: 100%;
+  width: 70vw;
   margin: 4rem 0;
   text-align: center;
 }
@@ -74,7 +81,6 @@ export default {};
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0 15rem;
 }
 .skills-wrapper img {
   padding: 1.25rem;

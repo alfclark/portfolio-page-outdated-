@@ -19,13 +19,13 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="#contact"
               ><button class="nav-button">Say Hello!</button></a
             >
           </li>
