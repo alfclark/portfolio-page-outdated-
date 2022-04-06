@@ -81,4 +81,9 @@ export default {
   animation: show1 5s forwards;
   text-decoration: underline;
 }
+@media screen and (max-width: 900px) {
+  .scroll-me {
+    bottom: 5%;
+  }
+}
 </style>
