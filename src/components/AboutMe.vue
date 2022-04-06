@@ -59,7 +59,6 @@
 
 <script>
 export default {
-  name: "App",
   methods: {
     generateFact() {
       const numSelect = Math.floor(Math.random() * this.facts.length);
