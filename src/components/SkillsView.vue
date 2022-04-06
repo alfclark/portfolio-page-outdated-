@@ -7,53 +7,48 @@
         <hr class="divider" />
       </h1>
       <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="@/assets/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="@/assets/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="@/assets/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="@/assets/icons8-vue.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="@/assets/icons8-python.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="@/assets/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="@/assets/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
+        <img
+          src="@/assets/icons8-javascript.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="@/assets/icons8-html-5.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="@/assets/icons8-css3.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="@/assets/icons8-vue.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="@/assets/icons8-python.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="@/assets/icons8-git.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="@/assets/icons8-bootstrap.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
       </div>
     </div>
   </section>
@@ -74,7 +69,13 @@ export default {};
 .skill-header {
   margin-bottom: 1rem;
 }
-
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15rem;
+}
 .skills-wrapper img {
   padding: 1.25rem;
 }
@@ -108,6 +109,13 @@ export default {};
   }
   .icon-card {
     margin: 0.5rem;
+  }
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
   }
 }
 </style>
