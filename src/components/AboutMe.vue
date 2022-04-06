@@ -68,7 +68,7 @@ export default {
   },
   data() {
     return {
-      fact: " ",
+      fact: "",
       facts: [
         "🐉 I lived 2 years in China 🐉",
         "🎹 I play 6 instruments 🎹",
@@ -80,6 +80,8 @@ export default {
         "🥡 My chinese name is 马超 🥡",
         "🏃🏻‍♂️ I have a national silver medal in track & field 🏃🏻‍♂️",
         "🤖 I am a Mechatronics Engineer 🤖",
+        "🚀 My favourite videogame is Rocket League 🚀",
+        "🤓 I won a full scholarship for post-graduate studies in China 🤓",
       ],
     };
   },
@@ -89,7 +91,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .about {
-  margin: 3rem 0;
+  margin-top: 3rem;
 }
 .container-about {
   background-color: #783ad681;
@@ -156,5 +158,22 @@ export default {
 .fact {
   font-size: 1.5rem;
   color: var(--dark);
+}
+@media screen and (max-width: 900px) {
+  .sub-about {
+    font-size: 2rem;
+  }
+  .about-text {
+    font-size: 1rem;
+  }
+  .social-icon {
+    font-size: 1.5rem;
+  }
+  .funfact h2 {
+    font-size: 1.5rem;
+  }
+  .fact {
+    font-size: 1rem;
+  }
 }
 </style>
