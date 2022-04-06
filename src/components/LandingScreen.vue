@@ -83,7 +83,7 @@ export default {
 }
 @media screen and (max-width: 900px) {
   .scroll-me {
-    bottom: 5%;
+    bottom: 10%;
   }
 }
 </style>
