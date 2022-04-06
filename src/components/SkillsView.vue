@@ -67,7 +67,7 @@ export default {};
 <style scoped>
 .skills {
   max-width: 100%;
-  margin-top: 4rem;
+  margin: 4rem 0;
   text-align: center;
 }
 
@@ -100,5 +100,14 @@ export default {};
   border-color: #783ad6;
   border-style: solid;
   border-width: 5px;
+}
+@media screen and (max-width: 900px) {
+  .icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  .icon-card {
+    margin: 0.5rem;
+  }
 }
 </style>
