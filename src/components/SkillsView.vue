@@ -27,7 +27,7 @@
             class="icon icon-card"
           />
           <img
-            src="@/assets/icons8-python.svg"
+            src="@/assets/icons8-vue.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
@@ -36,7 +36,7 @@
 
         <div class="second-set animate__animated animate__pulse">
           <img
-            src="@/assets/icons8-react-native.svg"
+            src="@/assets/icons8-python.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
