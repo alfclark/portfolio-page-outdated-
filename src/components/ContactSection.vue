@@ -75,6 +75,7 @@ export default {
   width: 40vw;
   height: 100%;
 }
+
 .form form {
   width: 40vw;
   height: 100%;
