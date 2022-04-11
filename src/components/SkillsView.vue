@@ -91,10 +91,6 @@ export default {};
   height: 10rem;
 }
 
-.icon:hover {
-  animation: shake1 2s ease 0s 1 normal forwards;
-}
-
 .icon-card {
   background-color: #fff;
   border-radius: 11px;
@@ -103,10 +99,12 @@ export default {};
 }
 
 .icon-card:hover {
+  animation: shake1 2s ease 0s 1 normal forwards;
   box-shadow: 0 0;
   border-color: #783ad6;
   border-style: solid;
   border-width: 5px;
+  cursor: pointer;
 }
 @media screen and (max-width: 900px) {
   .icon {
