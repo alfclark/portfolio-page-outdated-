@@ -3,6 +3,11 @@
   <section class="contact">
     <div class="animation">
       <h3>Get in touch — let’s work together!</h3>
+      <p>
+        Got a project? Drop me a line if you want to work together on something
+        exciting. Big or small. Your call.
+      </p>
+      <p>Location: Sonora, Mexico</p>
     </div>
     <div class="form">
       <form
@@ -39,7 +44,6 @@
         />
         <label for="reason">I'm contacting you because:</label>
         <select name="reason" v-model="reason">
-          <option value="" disabled selected>Select reason</option>
           <option value="professional">Professional reasons</option>
           <option value="education">Education</option>
           <option value="feedback">Feedback</option>
@@ -99,6 +103,16 @@ export default {
   position: relative;
   width: 30vw;
   height: 100%;
+  text-align: left;
+  padding-left: 1rem;
+}
+.animation h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.animation p {
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .form form {
@@ -130,7 +144,7 @@ select {
 }
 
 ::placeholder {
-  color: rgba(212, 212, 212, 0.176);
+  color: rgba(212, 212, 212, 0.491);
 }
 
 .button {
@@ -171,7 +185,18 @@ select {
     align-items: center;
   }
   .animation {
-    width: 100vw;
+    width: 80vw;
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .animation h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .animation p {
+    font-size: 0.7rem;
   }
 }
 </style>
