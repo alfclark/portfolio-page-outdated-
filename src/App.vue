@@ -117,6 +117,33 @@ export default {
     opacity: 1;
   }
 }
+@keyframes shake1 {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-2px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(2px);
+  }
+
+  80% {
+    transform: translateX(1px);
+  }
+
+  90% {
+    transform: translateX(-1px);
+  }
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   color: white;
