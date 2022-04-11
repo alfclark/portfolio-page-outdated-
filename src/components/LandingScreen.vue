@@ -50,6 +50,9 @@ export default {
 .avatar {
   width: 20%;
 }
+.avatar:hover {
+  animation: shake1 2s ease 0s 1 normal forwards;
+}
 .my_name {
   font-size: 3rem;
 }
