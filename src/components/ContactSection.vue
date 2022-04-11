@@ -7,26 +7,38 @@
     <div class="form">
       <form
         class="row g-3"
+        ref="anyName"
+        @submit="submitForm"
+        autocomplete="off"
         action="https://formsubmit.co/9144a6a93c855ef6560bfe2b18cdbc55"
         method="POST"
-        ref="anyName"
-        @submit.prevent="submitForm"
-        autocomplete="off"
       >
+        <!-- Configs -->
+        <input type="text" name="_honey" style="display: none" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://www.alfclark.dev/" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="New message from portfolio page!"
+        />
+        <!-- Inputs -->
         <input
           type="text"
           name="name"
+          v-model="name"
           placeholder="What's your name?"
           required
         />
         <input
           type="email"
           name="email"
+          v-model="email"
           placeholder="your@email.com"
           required
         />
         <label for="reason">I'm contacting you because:</label>
-        <select name="reason">
+        <select name="reason" v-model="reason">
           <option value="" disabled selected>Select reason</option>
           <option value="professional">Professional reasons</option>
           <option value="education">Education</option>
@@ -38,6 +50,7 @@
         <input
           type="text"
           name="message"
+          v-model="message"
           placeholder="Your Message"
           required
           cols="30"
@@ -67,10 +80,6 @@ export default {
     return {
       hide: "",
       show: "",
-      name: "",
-      email: "",
-      message: "",
-      reason: "",
     };
   },
 };
