@@ -2,19 +2,23 @@
   <div style="margin-top: -50px; position: absolute" id="contact"></div>
   <section class="contact">
     <div class="animation">
-      <span>hello</span>
+      <h3>Get in touch — let’s work together!</h3>
     </div>
     <div class="form">
       <form
-        ref="anyName"
-        @submit="submitForm"
-        action="https://formsubmit.co/alfredoclarkcardenas@gmail.com"
+        class="row g-3"
+        action="https://formsubmit.co/9144a6a93c855ef6560bfe2b18cdbc55"
         method="POST"
+        ref="anyName"
+        @submit.prevent="submitForm"
+        autocomplete="off"
       >
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="hidden" name="_next" value="http://localhost:8080/" />
-        <input type="hidden" name="_template" value="table" />
+        <input
+          type="text"
+          name="name"
+          placeholder="What's your name?"
+          required
+        />
         <input
           type="email"
           name="email"
@@ -22,8 +26,8 @@
           required
         />
         <label for="reason">I'm contacting you because:</label>
-        <select name="reason" id="reason">
-          <option value="none"></option>
+        <select name="reason">
+          <option value="" disabled selected>Select reason</option>
           <option value="professional">Professional reasons</option>
           <option value="education">Education</option>
           <option value="feedback">Feedback</option>
@@ -31,7 +35,14 @@
           <option value="starWars">Chat about Star Wars</option>
           <option value="other">Other</option>
         </select>
-        <input type="text" name="message" placeholder="Your Message" required />
+        <input
+          type="text"
+          name="message"
+          placeholder="Your Message"
+          required
+          cols="30"
+          rows="5"
+        />
         <button class="button" :class="hide" type="submit">Submit</button>
         <div class="sent" :class="show">
           Sent! <i class="fa-solid fa-check"></i>
@@ -56,6 +67,10 @@ export default {
     return {
       hide: "",
       show: "",
+      name: "",
+      email: "",
+      message: "",
+      reason: "",
     };
   },
 };
@@ -65,39 +80,55 @@ export default {
 .contact {
   display: flex;
   height: 100%;
-  align-items: center;
-  justify-content: center;
   padding: 0;
   margin: 3rem 0;
+  left: 0;
 }
 .animation {
-  background-color: aqua;
-  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 30vw;
   height: 100%;
 }
 
 .form form {
-  width: 40vw;
+  width: 70vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 2rem;
 }
-input,
+
 label {
   margin-top: 1rem;
 }
 input,
-label,
 select {
-  width: 90%;
+  margin-top: 1rem;
+  height: 65px;
+  width: 100%;
+  border: 2px solid var(--purple);
+  background: var(--dark);
+  padding: 0 1.5rem;
+  border-radius: 15px;
+  outline: none;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
 }
+
+::placeholder {
+  color: rgba(212, 212, 212, 0.176);
+}
+
 .button {
   margin: 1rem 0;
   padding: 0.5rem 3rem;
-  background-color: transparent;
-  color: var(--purple);
+  background-color: var(--dark);
+  color: white;
   border: solid var(--purple);
   border-radius: 2rem;
 }
@@ -125,5 +156,13 @@ select {
 }
 
 @media screen and (max-width: 900px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .animation {
+    width: 100vw;
+  }
 }
 </style>
