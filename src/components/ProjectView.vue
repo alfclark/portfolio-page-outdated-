@@ -243,12 +243,13 @@ export default {
 .container {
   width: 90vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
 }
 .projects {
-  width: 70vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -259,7 +260,6 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
   width: 80vw;
 }
 .project {
@@ -270,6 +270,7 @@ export default {
   width: 20rem;
   height: 25rem;
   cursor: pointer;
+  margin: 2rem;
 }
 .project:hover {
   background-color: #141c3a;
@@ -351,5 +352,24 @@ export default {
 .isShown {
   display: flex;
   transition: 0.4s;
+}
+@media screen and (max-width: 900px) {
+  .projects {
+    width: 95vw;
+  }
+  .projects-wrapper {
+    width: 95vw;
+  }
+  .project {
+    width: 10rem;
+    height: 15rem;
+    margin: 0.7rem;
+  }
+  .project-title {
+    font-size: 0.7rem;
+  }
+  .technologies .fa-brands {
+    font-size: 0.7rem;
+  }
 }
 </style>
