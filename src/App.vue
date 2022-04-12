@@ -3,6 +3,7 @@
   <LandingScreen />
   <AboutMe />
   <SkillsView />
+  <ProjectView />
   <GoTop />
   <ContactSection />
   <FooterView />
@@ -13,6 +14,7 @@ import NavBar from "./components/NavBar.vue";
 import LandingScreen from "./components/LandingScreen.vue";
 import AboutMe from "./components/AboutMe.vue";
 import SkillsView from "./components/SkillsView.vue";
+import ProjectView from "./components/ProjectView.vue";
 import FooterView from "./components/FooterView.vue";
 import GoTop from "./components/GoTop.vue";
 import ContactSection from "./components/ContactSection.vue";
@@ -27,6 +29,7 @@ export default {
     SkillsView,
     GoTop,
     ContactSection,
+    ProjectView,
   },
 };
 </script>
