@@ -72,7 +72,6 @@ export default {};
   margin: 4rem 0;
   text-align: center;
 }
-
 .skill-header {
   margin-bottom: 1rem;
 }
@@ -85,19 +84,16 @@ export default {};
 .skills-wrapper img {
   padding: 1.25rem;
 }
-
 .icon {
   width: 10rem;
   height: 10rem;
 }
-
 .icon-card {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 10px 10px #783ad6;
   margin: 1rem;
 }
-
 .icon-card:hover {
   animation: shake1 2s ease 0s 1 normal forwards;
   box-shadow: 0 0;
