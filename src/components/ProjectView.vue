@@ -15,7 +15,7 @@
           <div class="img">
             <img
               class="project-image"
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+              src="@/assets/projects/GameZone.png"
               alt="project"
               :class="onSelection"
             />
@@ -34,9 +34,11 @@
               <span class="code">&#47;&gt;</span>
             </p>
             <div class="technologies">
+              <i class="fa-brands fa-vuejs"></i>
               <i class="fa-brands fa-css3-alt"></i>
               <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-bootstrap"></i>
             </div>
           </div>
         </div>
