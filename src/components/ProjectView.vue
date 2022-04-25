@@ -30,7 +30,7 @@
           <div class="card-title">
             <p class="project-title">
               <span class="code">&lt;</span>
-              Rock, Paper, Scissors
+              Game Zone
               <span class="code">&#47;&gt;</span>
             </p>
             <div class="technologies">
