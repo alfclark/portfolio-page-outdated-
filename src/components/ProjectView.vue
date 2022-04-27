@@ -55,11 +55,13 @@
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a class="link" href=""
+              <a class="link" href="https://alfclark-gamezone.netlify.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
-              <a class="link" href=""><i class="fa-brands fa-github"></i></a>
+              <a class="link" href="https://github.com/alfclark/game-zone"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
           </div>
           <div class="card-title">
