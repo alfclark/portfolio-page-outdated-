@@ -52,16 +52,20 @@
           <div class="img">
             <img
               class="project-image"
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+              src="@/assets/projects/encryptionPage.png"
               alt="project"
               :class="onSelection"
             />
             <div class="links" :class="isShown">
-              <a class="link" href=""
+              <a class="link" href="https://alura-challenge1.netlify.app/"
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
               |
-              <a class="link" href=""><i class="fa-brands fa-github"></i></a>
+              <a
+                class="link"
+                href="https://github.com/alfclark/alura-challenge1"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
           </div>
           <div class="card-title">
